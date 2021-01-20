@@ -1,8 +1,8 @@
-const challengeFunction = function(param){
+const PigLatin = function(str){
     /* YOUR CODE HERE */
     let result
 
     return result
 }
 
-module.exports = challengeFunction
+module.exports = PigLatin

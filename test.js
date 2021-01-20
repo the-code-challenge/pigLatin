@@ -1,37 +1,81 @@
-const challengeFunction = require('./index.js')
+const PigLatin = require('./index.js')
 const assert = require('assert')
 
-describe('ChallengeTemplate', () => {
+describe('PigLatin Challenge', () => {
 
     /**
-     * TEST DESCRIPTION
+     * TEST 1
      */
-    it('Test1', () => {
+    it('Test-1:', () => {
 
-        let result = challengeFunction(1)
-        let expected = 1
+        let result = PigLatin("aliforniacay")
+        let expected = "aliforniacay"
 
         assert.strictEqual(result,expected)
     })
 
     /**
-     * TEST DESCRIPTION
+     * TEST 2
      */
-    it('Test2', () => {
-        let result = challengeFunction(2)
-        let expected = 2
+    it('Test-2:', () => {
+        let result = PigLatin("paragraphs")
+        let expected = "aragraphspay"
 
         assert.strictEqual(result,expected)
     })
 
     /**
-     * TEST DESCRIPTION
+     * TEST 3
      */
-    it('Test3', () => {
-        let result = challengeFunction(3)
-        let expected = 3
+    it('Test-3:', () => {
+        let result = PigLatin("glove")
+        let expected = "oveglay"
 
         assert.strictEqual(result,expected)
     })
+
+    /**
+     * TEST 4
+     */
+    it('Test-4:', () => {
+        let result = PigLatin("algorithm")
+        let expected = "algorithmway"
+
+        assert.strictEqual(result,expected)
+    })
+
+
+    /**
+     * TEST 5
+     */
+    it('Test-5:', () => {
+        let result = PigLatin("eight")
+        let expected = "eightway"
+
+        assert.strictEqual(result,expected)
+    })
+
+
+    /**
+     * TEST 6
+     */
+    it('Test-6:', () => {
+        let result = PigLatin("schwartz")
+        let expected = "artzschway"
+
+        assert.strictEqual(result,expected)
+    })
+
+    /**
+     * TEST 7
+     */
+    it('Test-7:', () => {
+        let result = PigLatin("rhythm")
+        let expected = "rhythmay"
+
+        assert.strictEqual(result,expected)
+    })
+
+
 
 })
