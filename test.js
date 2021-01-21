@@ -8,7 +8,7 @@ describe('PigLatin Challenge', () => {
      */
     it('Test-1:', () => {
 
-        let result = PigLatin("aliforniacay")
+        let result = PigLatin("california")
         let expected = "aliforniacay"
 
         assert.strictEqual(result,expected)
